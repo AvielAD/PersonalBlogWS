@@ -17,6 +17,23 @@
 .header{
     grid-area: header;
 }
+.layout-header{
+    display: grid;
+    grid-template-columns: subgrid;
+}
+.layout-header-logo{
+    grid-column: 1;
+}
+
+.layout-header-list-menu{
+    grid-column: 4;
+}
+
+.layout-header-list-elements{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
 .section-initial{
     grid-area: sinitial;
 }
