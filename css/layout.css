@@ -1,3 +1,4 @@
+/*Layout General template*/
 .container-layout{
     display: grid;
 
@@ -13,36 +14,36 @@
                          "contacto contacto contacto contacto"
                          "footer footer footer footer";
 }
-
+/*Layout Header no css grid*/
 .header{
     position: fixed;
     left: 0;
     top: 0;
-    right: 0;   
+    right: 0; 
 }
 .layout-header{
-    display: grid;
-    grid-template-columns: subgrid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem;
 }
-.layout-header-logo{
-    grid-column: 1;
-}
-
-.layout-header-list-menu{
-    grid-column: 4;
-}
-
-.layout-header-list-elements{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+.layout-header-list-menu ul li{
+    display: inline-block;
+    padding-left: 0.6rem;
 }
 
+
+/*Layout and features Section Initial*/
 .section-initial{
     grid-area: sinitial;
 }
+/*Layout and features Section about*/
+
 .section-about{
     grid-area: about;
 }
+/*Layout and features Section service*/
+
 .section-service{
     grid-area: service;
     display: grid;
@@ -60,9 +61,15 @@
 .sub-sec-service-4{
     grid-column: 4;
 }
+
+/*Layout and features Section whatsapp*/
+
 .section-whatsapp{
     grid-area: whatsapp;
 }
+
+/*Layout and features Section portafolio*/
+
 .section-portafolio{
     grid-area: portafolio;
     display: grid;
@@ -81,9 +88,32 @@
 .sub-sec-portafolio-4{
     grid-column: 4;
 }
+
+/*Layout and features Section contacto*/
+
 .section-contacto{
     grid-area: contacto;
 }
+
+/*Layout and features Section footer*/
+
 .section-footer{
     grid-area: footer;
 }
+
+/*Media Queries*/
+
+
+
+@media only screen and (max-width: 576px){
+  
+    .layout-header-list-menu li{
+        display: none;
+    }
+    .menu-icon.show{
+        grid-column: 4;
+        display: block;
+    }
+    
+}
+
