@@ -4,7 +4,7 @@ body{
     margin: 0 auto;
 }
 .header-color{
-    background-color: #131212;
+    background-color: #000000;
     padding: .8rem;
 }
 .container-list-style{
@@ -13,6 +13,12 @@ body{
 .list-el-style{
     color: #ffffff;
     text-decoration: none;
+}
+.menu-icon{
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
 }
 
 
@@ -42,6 +48,12 @@ body{
 
 @media only screen and (max-width: 576px){
   
+    .menu-icon{
+        display: block;
+    }
+    .layout-header-list-menu{
+        display: none;
+    }
     .section-initial{
         text-align: left;
         padding-top: 3.6rem;
