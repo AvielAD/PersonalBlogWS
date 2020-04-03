@@ -33,6 +33,14 @@
         background-position: center;
     }
 
+    .content-center{
+        max-width: 20rem;
+        text-align: center;
+        padding-top: 15rem;
+        padding-left: 3rem;
+    }
+    
+
 }
 
 /* Small devices (landscape phones, 576px and up)*/
