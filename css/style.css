@@ -1,5 +1,5 @@
-.body{
-
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .logo-atmosfera{
     background-image: url('../img/logo.svg');
@@ -16,6 +16,18 @@
     padding-left: 5rem;
 }
 
+/*=================Utilidades==========*/
+
+.padding-section-top{
+    padding-top: 13rem;
+}
+div i{
+    background-color: red;
+    color: red;
+}
+
+/*=================Utilidades==========*/
+
 #hero{
     background-image: url('../img/image-hero.jpg');
     background-repeat: no-repeat;
@@ -25,6 +37,29 @@
     height: 100vh;
 }
 
+/*=========================About===*/
+#about{
+    background: #000000;
+    height: 768px;
+    width: 1023p;
+
+}
+div p{
+    color: white;
+}
+div span{
+    text-align: start;
+    color: #237add;
+}
+.container-image{
+    background-image: url('../img/perfil.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 400px;
+}
+/*=========================End About===*/
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {

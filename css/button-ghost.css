@@ -45,6 +45,7 @@
   
   .btn-ghost.secundary:hover{
     color: var(--black);
+    border-color: var(--black);
     background-color: var(--white);
   }
   
